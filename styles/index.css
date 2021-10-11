@@ -1,0 +1,112 @@
+html{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+    font-family: 'Poiret One', cursive;
+    background-color: #FFF
+}
+
+body{
+    margin: 0;
+    padding: 2em;
+    background-image: url(../images/background1.jpg);
+    background-size: 100% 100%;
+    font-size: 1.5em;
+
+}
+
+body .header{
+    min-height: 40vh;
+    padding-top: 5vh;
+    position: relative;
+}
+
+body .picture{
+    position: absolute;
+    right: 5vw;
+    top: 5vh;
+}
+
+body .picture img{
+    height: 220px;
+    width: 205px;
+    border-radius: 100%;
+    border: 10px outset #FFaa00;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color:#F00;
+}
+
+a:active{
+    font-weight: bold;
+}
+
+.bigger:hover{
+    font-size: 1.2em;
+}
+
+.brown{
+    color: brown;
+}
+
+.box{
+    height: 20px;
+    width: 20px;
+    background-color: #00aaff;
+    display: inline-block;
+}
+
+.inlineBlock{
+    display: inline-block;
+}
+
+.background:hover{
+    background-color: rgba(199, 174, 174, 0.6);
+
+}
+
+.title{
+    padding: 0.5em;
+}
+
+.smaller{
+    font-size: 0.7em;
+}
+
+.title:hover{
+    border: 2px solid black;
+}
+
+.upperCase{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8em;
+
+}
+
+
+.picture:hover{
+    transition: all 4s;
+	transform: rotateY(360deg);
+}
+
+.downloadCV{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-size: 2em;
+}
+
+#piechart{
+    margin: 0;
+    width: 700px; 
+    height: 300px;
+    background-color: transparent;
+}
