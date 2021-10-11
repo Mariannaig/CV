@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MariannaIG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+    <base target="_blank">
+    <title>CV Marianna</title>
+
+   
+
+    <!-- script for donut chart/qualitites -->
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ['Qualities', 'Dedication'],
+            ['Fast learner',     10],
+            ['Can be relied on',      8],
+            ['Open-minded',  7],
+            ['Outgoing', 6],
+            ['Confident',    5]
+            ]);
+
+            var options = {
+            // title: 'My Daily Activities',            
+                pieHole: 0.5,
+                pieSliceTextStyle: {
+                    color: 'black',
+                },
+                backgroundColor:'transparent',
+                chartArea: {
+                    right: 300,
+                    top:30,
+                    width:'100%',
+                    height:'75%'
+                },
+                colors:['#E11339','#a2ed23','#014DC1','#fcdb01','#3526ba'],
+                legend: {
+                    alignment: 'center',
+                    textStyle: {
+                	fontName: 'Poiret One',
+                    fontSize: 15,
+                    bold: 'true',
+                
+                    }
+                },
+                
+                
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+        }
+    
+    </script>
+      
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="info">
+            <h1>Marianna Ivanova</h1>
+            <h2>Front-end developer/web designer</h2>
+            <div class="contacts">
+                <div> <i class="fa fa-phone"></i> <a title="Call me" href="tel:+359878693320">+(359)878693320</a></div>
+                <div> <i class="fab fa-linkedin"></i> <a title="LinkedIn profile" href="https://www.linkedin.com/in/marianna-ivanova-74217bba/">LinkedIn</a></div>
+                <div> <i class="fa fa-envelope"></i> <a title="Write me an email" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkwrCRwdBRsSZcDtMbHjVRGqRWGKNHvQxznSFGzfczPVBFtQgvFBmsQbRcdGjQRckTVJfl">mariannaivanovai@gmail.com</a></div>
+                <div> <i class="fa fa-map-marker-alt"></i> <a title="Where is Sofia?" href="https://goo.gl/maps/X85DCRSi6pXVz66c7"> Sofia, Bulgaria</a></div>
+            </div>        
+        </div>
+
+        <div class="picture">
+            <img src="./images/profilePicture.jpg" alt="Picture">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="experience">
+        <h3 class="upperCase">Experience</h3>
+
+        <h4> <a title="CCHBC.com" href="https://www.coca-colahellenic.com/">"Coca-Cola Hellenic Bottling Company"</a></h4>
+        
+        <ul>
+            <li class="title background"><b>Cross-border planer</b>
+                <div title="1 year, 9 months" class="smaller"> <i class="fa fa-calendar-alt "></i> December 2019 - August 2021 </div>
+                <div title="Bulgaria" class="smaller"> <i class="fa fa-map-marker-alt"></i>Sofia</div>
+                <div><i class="brown">Main responsibilitites in this role:</i></div>
+                <ul>
+                    <li>Build detailed supply plan based on demand and taking into consideration safety stock and product availability;</li>
+                    <li>Ensure the delivery of all planned purchases from suppliers and other CCH countries as per agreed SLAs and target KBIs;</li>
+                    <li>Close cooperation with other CCH countries planning teams, external suppliers, demand planning, sales, marketing, logistics and financial departments to ensure system data integrity and accurate planning;</li>
+                    <li>Manage inventory as per Business plan and ensure availability of finished goods;</li>                    
+                </ul>
+            </li>
+
+            <li class="title background"><b>Master data expert</b>
+                <div title="1 year, 9 months" class="smaller"> <i class="fa fa-calendar-alt"></i> January 2018 - October 2019 </div>
+                <div title="Bulgaria" class="smaller"> <i class="fa fa-map-marker-alt"></i>Sofia</div>
+                <div><i class="brown">Main responsibilitites in this role:</i></div>
+                <ul>
+                    <li>Close collaboration with with 28 countries and many departments;</li>
+                    <li>Working with different tools: Shared Services Framework (SSF), Lotus Notes, Daisy, Business Planning Management (BPM), ServiceNow, Winshuttle</li>
+                    <li>Validation, update and upload of master data in SAP ERP and SCM system</li>
+                    <li>Responsible for Standard price calculation for all costing relevant materials - analyze the reasons for costing errors and distribute them to the respective departments;</li>
+                    <li>Provide coaching and training on technical and process-related matters;</li>                    
+                </ul>
+            </li>
+        </ul>
+
+        <h4> <a title="HighSierraPools.com" href="https://highsierrapools.com/">“High Sierra Pools”</a></h4>
+        <ul>
+            <li class="title background"><b>Facility manager and operator</b>
+                <div title="5 months" class="smaller"> <i class="fa fa-calendar-alt"></i> May 2016 - September 2016 </div>
+                <div title="USA" class="smaller"> <i class="fa fa-map-marker-alt"></i>Frederick, MD</div>
+                <div><i class="brown">Main responsibilitites in this role:</i></div>
+                <ul>
+                    <li>Opening and colsing the swimming facillities;</li>
+                    <li>Plan and organize workloads and staff assignments;</li>
+                    <li>Regulary check the pumping system for machine-related mistakes or flaws;</li>                   
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <h3 class="upperCase">Education </h3>
+
+    <div class="title">
+        <h4> <a title="Progress.net" href="https://progressbg.net/">"Progress, Computer education center"</a></h4>    
+        <ul>
+            <li><b>Front-end/Web design</b>
+                <div><i class="brown">Subjects:</i></div>            
+                <ul>
+                    <li>HTML;</li>
+                    <li>CSS;</li>
+                    <li>JavaScript;</li>                  
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="title">
+        <h4> <a title="designAcademy.bg" href="https://designacademy.bg/">"Design academy, Licensed training center"</a> <a title="NetIT.bg" href="https://netit.bg/"> (NET IT)</a></h4>   
+        <ul>
+            <li><b>Interior design</b>
+                <div><i class="brown">Subjects:</i></div>            
+                <ul>
+                    <li>Composition;</li>
+                    <li>Coloring;</li>
+                    <li>Ergonomics;</li>                  
+                    <li>Spaces (Exhibition; Office; For children; For food);</li>                  
+                    <li>AutoCAD;</li>                  
+                    <li>Autodesk 3ds Max;</li>                                   
+                </ul>
+            </li>
+
+            <li><b>Introduction to graphic design</b>
+                <div><i class="brown">Subjects:</i></div>
+                <ul>
+                    <li>Modern trends</li>
+                    <li>Techniques for creative thinking</li>
+                    <li>Corporate identity</li>
+                    <li>Golden ratio</li>
+                    <li>Graphic symbols and stylization</li>
+                    <li>Fonts and colors</li>
+                    <li>Overview of Photoshop, Illustrator, InDesign</li>
+                    <li>Logo design</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <h4> <a title="TU-Sofia.bg" href="https://www.tu-sofia.bg/">Technical University of Sofia</a></h4>
+        
+    <ul>
+        <li class="title"> <strong>Master's degree</strong>, Information Technology Administration and Management
+            <div class="smaller"> <i class="fa fa-calendar-alt"></i> 2017 - 2019 </div>
+            <div title="Bulgaria" class="smaller"> <i class="fa fa-map-marker-alt"></i>Sofia</div>
+            <div><i class="brown">Fundamental Subjects:</i></div>
+            <ul>
+                <li>Internet Based Services;</li>
+                <li>Design of Management Systems;</li>
+                <li>E-government Systems;</li>
+                <li>Multi-dimensional Analysis;</li>                    
+                <li>Anti-corruption Practices;</li>                    
+                <li>Management of European Projects</li>                    
+            </ul>
+        </li>
+
+        <li class="title"> <strong>Bachelor's degree</strong>, Public Administration
+            <div class="smaller"> <i class="fa fa-calendar-alt"></i> 2013 - 2017 </div>
+            <div class="smaller"> <i class="fa fa-book"></i> Thesis topic: "Developing a strategy for improving alternative tourism for the Bulgarian southern region"</div>
+            <div title="Bulgaria" class="smaller"> <i class="fa fa-map-marker-alt"></i>Sofia</div>
+            <div><i class="brown">Fundamental Subjects:</i></div>
+            <ul>
+                <li>Mathematics;</li>
+                <li>Information Technology;</li>
+                <li>Quantitative Methods and Statistics;</li>
+                <li>Management;</li>                    
+                <li>Web Applications in Public Administration;</li>                    
+                <li>Marketing;</li>                    
+                <li>Organizational Behavior;</li>                    
+                <li>Multimedia Applications in Public Administration;</li>                    
+                <li>Public Relations;</li>                    
+            </ul>
+        </li>
+    </ul>
+
+
+    <hr>
+
+    <h3 class="upperCase bar">Languages</h3>
+    <div class="title">English
+        <div title="Advanced">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            
+        </div>
+    </div>
+    <div class="title">German
+        <div title="Beginner">
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3 class="upperCase">Skills</h3>
+    <div class="skills title">
+        <div> <i class="brown">Technical</i> </div> 
+        <span>HTML</span>  
+        <span>CSS</span>  
+        <span>JavaScript</span>  
+        <span>SAP</span>  
+        <span>Visual Studio Code</span> 
+    </div> 
+    
+    <div class="skills title">
+        <div><i class="brown">Organisational / managerial skills</i></div>
+        <span>Keep deadlines</span>
+        <span>Multitask </span>
+        <span>Lead </span>
+        <span>High productive</span>
+    </div>
+    
+    <hr>
+    
+
+    <h3 class="upperCase">Personal qualities</h3>
+    <div id="piechart" style="width: 700px; height: 300px;"></div>
+    <!-- <div id="myPieChart"></div> -->
+
+    <hr>
+
+    <h3 class="upperCase">Passions</h3>
+    <div class="bigger"> <i class="fa fa-gem"></i> Newton</div>
+    <div class="bigger"> <i class="fa fa-gem"></i> Design</div>
+    <div class="bigger"> <i class="fa fa-gem"></i> Books</div>
+    <div class="bigger"> <i class="fa fa-gem"></i> Ski</div>
+    <div class="bigger"> <i class="fa fa-gem"></i> Kangoo jumps</div>
+    <div class="bigger"> <i class="fa fa-gem"></i> Trips</div>
+
+    <div class="downloadCV">
+        <a  title="Download file CV MariannaIG" href="./documents/CV_MariannaIG.pdf"><i class="fa fa-file-download"></i></a>
+    </div>
+
+    
+    
+</body>
+</html>
