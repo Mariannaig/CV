@@ -72,6 +72,18 @@ a:active{
 
 }
 
+.redBckg:hover{
+    background-color: rgb(229, 33, 61, 0.2);
+}
+
+.greenBckg:hover{
+    background-color: rgb(63, 165, 53, 0.3);
+}
+
+.blueBckg:hover{
+    background-color: rgb(6, 70, 88, 0.3);
+}
+
 .title{
     padding: 0.5em;
 }
@@ -100,6 +112,13 @@ a:active{
 .downloadCV{
     position: fixed;
     bottom: 15px;
+    right: 15px;
+    font-size: 2em;
+}
+
+.navigation{
+    position: fixed;
+    top: 15px;
     right: 15px;
     font-size: 2em;
 }
